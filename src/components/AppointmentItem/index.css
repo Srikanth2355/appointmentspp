@@ -1,1 +1,27 @@
 /* Write your CSS here */
+.individualcontainer {
+  border: 1px solid #b5b7c4;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  margin: 10px 10px 10px 0px;
+}
+.upperrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.listtitle {
+  color: #171f46;
+  font-weight: 600;
+}
+.starbutton {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+  padding: 5px;
+}
+.starimage {
+  width: 20px;
+  height: 20px;
+}

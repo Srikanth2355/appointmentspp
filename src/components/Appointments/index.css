@@ -1,1 +1,132 @@
 /* Write your CSS here */
+* {
+  margin: 0px;
+}
+.container {
+  margin: 0px;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(to top, #9796f0, #fbc7d4);
+}
+.innercontainer {
+  width: 70%;
+  border: none;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.heading {
+  color: #171f46;
+  font-weight: 600;
+}
+.formcontainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #b5b7c4;
+  padding-bottom: 10px;
+}
+.appointmentform {
+  width: 350px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.titlelabel,
+.datelabel {
+  color: #b5b7c4;
+  font-size: 14px;
+}
+.title,
+.date {
+  width: 80%;
+  font-size: 14px;
+  color: #b5b7c4;
+  border: 1px solid #b5b7c4;
+  border-radius: 5px;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  outline: none;
+  color: #171f46;
+}
+.button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #8b5cf6;
+  padding: 10px;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.imagecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sideimage {
+  width: 100%;
+}
+.headingdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.appointmentheading {
+  color: #171f46;
+}
+.starredbutton {
+  background-color: transparent;
+  padding: 10px;
+  font-size: 14px;
+  color: #9897f0;
+  border: 1px solid #9897f0;
+  border-radius: 10px;
+}
+
+.listcontainer {
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+.addbackground {
+  background-color: #9796f0;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .innercontainer {
+    width: 90%;
+  }
+  .imagecontainer {
+    display: none;
+  }
+  .title,
+  .date {
+    width: 90%;
+  }
+  .formcontainer {
+    display: block;
+  }
+  .appointmentform {
+    width: 250px;
+  }
+
+  .starredbutton {
+    padding: 5px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .innercontainer {
+    width: 50%;
+  }
+}
